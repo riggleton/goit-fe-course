@@ -3,15 +3,19 @@
     font-family: 'Playfair Display';
 }
 
+body {
+    margin: 0px;
+}
+
 .wrapper {
-    max-width: 901px;  
-    margin: 77px 150px;
+    max-width: 965px;  
+    margin: 0px auto;
 }
 
 ul {
-    text-align: left;
+    text-align: center;
     padding: 0em;
-    margin-bottom: 73px;
+    margin: 0px;
     border: 0em;
 }
 
@@ -35,8 +39,13 @@ article {
     margin: 0px 61px;
 }
 
+section {
+    font-size: 0;
+    text-align: center;
+}
+
 .left-article {
-    margin: 0 41px 0 0;
+    margin-right: 60px;
 }
 
 .right-article {
@@ -62,40 +71,14 @@ h2 {
     color: #626262;
     font-size: 30px;
     font-weight: normal;
+    margin: 0;
 }
 
 p {
     color: #626262;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 100px;
-}
-
-#lifestyle {
-    margin-left: 142px;
-    margin-right: 87px;
-}
-
-#photodiary {
-    margin-right: 56px;
-}
-
-#music {
-    margin-right: 29px;
-}
-
-.button {
-    display: inline-block;
-    font-size: 20px;
-    line-height: 1em;
-    padding: 22px 35px;
-    color: #626262;
-    text-align: center;
-    border-width: 164px;
-    border-style: solid;
-    border-color: #626262;
-    border-width: 1px;
-    margin-left: 360px;
+    margin: 0;
 }
 
 .bottom {
@@ -104,6 +87,14 @@ p {
   
 ul li:hover {
     color: #03a9f4;
-  }
+}
+
+button {
+    margin: 0px auto 10px;
+    font-size: 20px;
+    color: #626262;
+    padding: 0 20px;
+
+}
   
   
