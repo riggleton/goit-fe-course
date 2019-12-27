@@ -30,7 +30,7 @@ body {
     list-style: none;
 }
 
-.menu-item:hover {
+.menu-item-link:hover {
     color: #03a9f4;
 }
 
