@@ -13,6 +13,16 @@ ul {
     list-style: none;
 }
 
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 h2,
 h3,
 p {
@@ -152,6 +162,8 @@ ul.menu {
     transform: translateY(-50%);
     z-index: 5;
     padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .slider-button:hover {
@@ -159,15 +171,17 @@ ul.menu {
 }
 
 .slider:hover .slider-button {
-    background: rgba(81, 159, 141, 1);
+    background: rgba(81, 159, 141, 1), url(../img/next.png);
 }
 
 .slider-button-prev {
     left: 245px;
+    background-image: url(../img/prev.png);
 }
 
 .slider-button-next {
     right: 245px;
+    background-image: url(../img/next.png);
 }
 
 .slider-button img {
@@ -269,18 +283,19 @@ ul.menu {
 .btn-clock,
 .btn-add {
     position: absolute;
-    z-index: 9;
+    z-index: 5;
     opacity: 1;
+    background: transparent;
 }
 
-.btn-like img,
-.btn-copy img,
-.btn-clock img {
+.btn-like,
+.btn-copy,
+.btn-clock {
     width: 50px;
     height: 50px;
 }
 
-.btn-add img{
+.btn-add {
     height: 50px;
     width: 166px;
 }
