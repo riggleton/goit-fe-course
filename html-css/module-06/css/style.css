@@ -1,0 +1,331 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #999999;
+}
+
+ul, 
+h1, h2, h3, h4, h5
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    color: #95e1d3;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+    text-transform: uppercase;
+}    
+
+.header-menu-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #b0e9de;
+    position: relative;
+}
+
+.header-menu-link:hover {
+    color: #f38181;
+}
+
+.header-menu-link::after {
+    display: none;
+    content: "";
+    position: absolute;
+    background-color: #f38181;
+    height: 3px;
+    width: 50px;
+    top: 30px;
+    left: -1px;
+}
+
+.header-menu-link:hover::after {
+    display: block;
+}
+
+
+.section-heading {
+    color: #333333;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-heading-w {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 50px;
+}
+
+.section-heading-t {
+    position: relative;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.section-heading-t::after {
+    content: "";
+    position: absolute;
+    background-color: #f38181;
+    height: 3px;
+    width: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -40px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-list-item {
+    width: 360px;
+    background-repeat: no-repeat;
+    margin-bottom: 90px;
+}
+
+.photography {
+     background-image: url(../img/alarm.png);
+}
+
+.web-design {
+    background-image: url(../img/line-graph.png);
+}
+
+.creativity {
+    background-image: url(../img/computer.png);
+}
+
+.seo {
+    background-image: url(../img/book.png);
+}
+
+.css-html {
+    background-image: url(../img/home.png);
+}
+
+.digital {
+    background-image: url(../img/image.png);
+}
+
+.service-list-item-h4 {
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 70px;
+}
+
+.service-list-item-p {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 70px;
+}
+
+.team-about {
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0 112px;
+    width: 980px;
+}
+
+.team-members-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.team-members-list-item {
+    width: 380px;
+}
+
+.member-image {
+    width: 380px;
+    height: 470px;
+    margin-bottom: 30px;
+    z-index: 0;
+}
+
+.member-image::before:hover {
+    background: linear-gradient(90deg, #fce38a, #f38181, 0.9);
+}
+
+.member-name {
+    text-transform: uppercase;
+    color: #333333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 14px;
+}
+
+.member-position {
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    margin: 12px 0;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer::before {
+    position: absolute;
+    content: "";
+    background-color: #e5e5e5;
+    height: 1px;
+    width: 1200px;
+    top: 1685px;
+}
+
+.pink {
+    color: #f38181;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(252, 227, 138, 0.9), rgb(243, 129, 129, 0.9));
+    width: 380px;
+    height: 470px;
+    z-index: 5;
+}
+
+.overlay-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-members-list-item:hover .overlay {
+    opacity: 1;
+    transition: linear 200ms;
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px #95e1d3;
+}
+
+.team-members-list-item:hover .member-image {
+    transform: translate(-10px, -10px);
+    transition: linear 200ms;
+}
+
+.overlay-icon:hover .overlay-icon-btn {
+    background-color: #95e1d3;
+    cursor: pointer;
+    transition: linear 200ms;
+}
+
+.overlay-icon-btn {
+    width: 55px;
+    height: 55px;
+    outline: none; 
+    padding: 0;
+    background-color: #fce38a;
+    border-style: none;
+    margin-right: 1px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay-icon-btn-fb {
+    background-image: url(../img/facebook.png);
+}
+
+.overlay-icon-btn-twitter {
+    background-image: url(../img/twitter.png);
+}
+
+.overlay-icon-btn-pinterest {
+    background-image: url(../img/pinterest.png);
+}
+
+.overlay-icon-btn-instagram {
+    background-image: url(../img/instagram.png);
+}
+
+.subscribe {
+    display: flex;
+    width: 380px;
+    height: 40px;
+}
+
+.text {
+    width: 230px;
+    height: 40px;
+    color: #ccc;
+    padding-left: 13px;
+    font-size: 14px;font-style: italic;
+    border-style: none;
+}
+
+.subscribe-btn {
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border-style: none;
+    background-color: #95e1d3;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subscribe-btn:hover {
+    cursor: pointer;
+}
