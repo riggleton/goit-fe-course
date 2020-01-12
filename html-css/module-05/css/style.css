@@ -40,7 +40,6 @@ address {
 
 .blue {
     background-color: #e9f0fd;
-    width: 1600px;
     margin: auto;
     padding: 100px 0;
 }
@@ -50,7 +49,6 @@ address {
 }
 
 .logo {
-    position: absolute;
     font-size: 30px;
     line-height: 32px;
     font-weight: 400;
@@ -62,13 +60,14 @@ address {
     color: #1abc9c;
 }
 
-ul.menu {
-    position: absolute;
-    right: 0;
+.menu {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 14px;
@@ -80,11 +79,9 @@ ul.menu {
 }
 
 .menu li {
-    display: inline-block;
     list-style: none;
     color: #000;
     margin-right: 34px;
-    text-align: right;
 }
 
 .menu li:last-child {
