@@ -289,27 +289,50 @@ address {
 
 .btn-like,
 .btn-copy,
+.btn-clock,
+.btn-add {
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #fff;
+}
+
+.btn-like:hover,
+.btn-copy:hover,
+.btn-clock:hover,
+.btn-add:hover {
+    background-color: #1abc9c;
+    border: none;
+}
+
+
+.btn-like,
+.btn-copy,
 .btn-clock {
     width: 50px;
     height: 50px;
 }
 
 .btn-add {
+    background-image: url(../img/button-add.png);
+    background-color: #323232;
     height: 50px;
     width: 166px;
 }
 
 .btn-like {
+    background-image: url(../img/button-like.png);
     left: 35px;
     top: 79px;
 }
 
 .btn-copy {
+    background-image: url(../img/button-copy.png);
     left: 94px;
     top: 79px;
 }
 
 .btn-clock {
+    background-image: url(../img/button-clock.png);
     left: 151px;
     top: 79px;
 }
@@ -332,7 +355,6 @@ address {
 .footer {
     background-color: #323232;
     height: 88px;
-    width: 1600px;
     color: #fff;
     font-size: 16px;
     text-align: center;
