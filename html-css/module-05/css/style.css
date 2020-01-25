@@ -285,12 +285,6 @@ address {
     z-index: 5;
     opacity: 1;
     background: transparent;
-}
-
-.btn-like,
-.btn-copy,
-.btn-clock,
-.btn-add {
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid #fff;
@@ -317,6 +311,8 @@ address {
     background-color: #323232;
     height: 50px;
     width: 166px;
+    left: 35px;
+    top: 136px;
 }
 
 .btn-like {
@@ -335,11 +331,6 @@ address {
     background-image: url(../img/button-clock.png);
     left: 151px;
     top: 79px;
-}
-
-.btn-add {
-    left: 35px;
-    top: 136px;
 }
 
 .product:hover .price {
