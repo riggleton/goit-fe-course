@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-slab-v10-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-slab-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-slab-v10-latin-regular.woff') format('woff'); /* Modern Browsers */
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Modern Browsers */
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dancing-script-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/dancing-script-v13-latin-regular.woff') format('woff'); /* Modern Browsers */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h2,
+h3,
+p {
+    margin: 0;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+input, textarea {
+    padding-left: 20px;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.wrapper-1 {
+    max-width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-2 {
+    max-width: 1400px;
+}
+
+.header {
+    padding-top: 40px;
+}
+
+.header-menu {
+    display: flex;
+    font-size: 14px;
+}
+
+.header-menu-item {
+    text-transform: uppercase;
+}
+
+.header-menu-item:not(:last-child) {
+    margin-right: 38px;
+}
+
+.header-menu-item-link:hover {
+    color: #fedd6c;
+    transition: linear 0.1s;
+}
+
+.contact-us {
+    background: url(../img/map.png), #222;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+    max-width: 1400px;
+    height: 675px;
+}
+
+.title {
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto';
+    padding-top: 100px;
+}
+
+.subtitle {
+    font-family: 'Dancing Script';
+    font-weight: normal;
+    font-size: 18px;
+    color: #777;
+}
+
+.title,
+.subtitle {
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0 100px;
+}
+
+.services-list-item {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+    padding-top: 100px;
+}
+
+.services-list-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.services-list-item-title {
+    font-family: 'Roboto';
+}
+
+.services-list-item-description {
+    font-family: 'Roboto Slab';
+    font-size: 14px;
+    line-height: 20px;
+    color: #777;
+}
+
+.e-commerce {
+    background-image: url(../img/icon-basket.png);
+}
+
+.responsive-web {
+    background-image: url(../img/Icon-Laptop.png);
+}
+
+.web-security {
+    background-image: url(../img/Icon-Locked.png);
+}
+
+.contact-us-title {
+    color: #fff;
+}
+
+.form {
+    margin: 0 auto;
+}
+
+.form-name,
+.form-email,
+.form-subject {
+    width: 455px;
+    height: 52px;
+    margin-right: 30px;
+}
+
+.form-name,
+.form-email,
+.form-subject,
+.form-message {
+    border-radius: 3px;
+    border: none;
+}
+
+.form-name::placeholder,
+.form-email::placeholder,
+.form-subject::placeholder,
+.form-message::placeholder {
+    color: #bbb;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+} 
+
+.form-message {
+    width: 455px;
+    height: 216px;
+    padding-top: 20px;
+}
+
+.form-name,
+.form-email {
+    margin-bottom: 30px;
+}
+
+.submit-btn {
+    display: block;
+}
+
+.form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 940px;
+    height: 216px;
+    margin: 76px auto 28px;
+}
+
+.submit-btn {
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+    width: 240px;
+    height: 66px;
+    margin: 0 auto;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+.form-name:valid,
+.form-email:valid,
+.form-message:valid {
+    outline: 2px solid green;
+}
+
+.form-name:invalid,
+.form-email:invalid,
+.form-message:invalid {
+    outline: 2px solid red;
+}
+
+
