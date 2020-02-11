@@ -1,0 +1,123 @@
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 320px;
+    }
+
+    .container-1 {
+        background-image: url(../img/background-mobile.jpg);
+        height: 540px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .container {
+        width: 748px;
+    }
+
+    .container-1 {
+        background-image: url(../img/background-tablet.jpg);
+        height: 700px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 40px 44px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .header-buttons {
+        padding: 0;
+        margin: 0;
+    }
+
+    .banner-heading-1 {
+        font-size: 52px;
+        width: 492px;
+        margin: 100px auto 38px;
+    }
+
+    .banner-heading-2 {
+        max-width: 404px;
+        margin-bottom: 38px;
+    }
+
+    .button-pink {
+        width: 226px;
+    }
+
+    .button-transparent {
+        width: 192px;
+        margin: 40px auto;
+    }
+
+    .partners-section {
+        width: 492px;
+    }
+
+    .partners-heading {
+        max-width: 404px;
+        margin-bottom: 30px;
+    }
+
+    .partners-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .partners-list-item {
+        max-width: 236px;
+    }
+
+    .item-2,
+    .item-4 {
+        order: 3;
+    }
+
+    .partners-list-item:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    .icon-overlay {
+        left: 138px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1200px;
+    }
+
+    .container-1 {
+        width: 100%;
+        background-image: url(../img/background-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .header {
+        max-width: 940px;
+    }
+
+    .partners-section {
+        width: 942px;
+    }
+
+    .partners-heading {
+        margin-bottom: 34px;
+    }
+}
+
+
+  

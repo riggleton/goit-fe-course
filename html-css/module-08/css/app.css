@@ -1,0 +1,174 @@
+*::before, 
+*::after, 
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container,
+.container-1 {
+    margin: 0 auto;
+    color: #fff;
+}
+
+.header-buttons {
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.logo {
+    display: block;
+    text-align: center;
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.header-button {
+    height: 36px;
+    width: 90px;
+    font-weight: 700;
+    font-size: 14px;
+    outline: none;
+    background-color: transparent;
+    border: solid 2px transparent;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.header-button:hover {
+    border-color: #fff;
+}
+
+.banner-heading-1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 38px auto 20px;
+}
+
+.banner-heading-2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 220px;
+}
+
+.button {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 36px;
+    color: #fff;
+    margin: 0 auto;
+    width: 280px;
+    height: 40px;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.button-pink {
+    margin-top: 20px;
+    background-color: #ff4e50;
+}
+
+.button-transparent {
+    background-color: transparent;
+    color: #ff4e50;
+    margin: 28px auto 30px;
+}
+
+.partners-section {
+    color: #333333;
+    margin: 0 auto;
+}
+
+.partners-heading {
+    font-size: 22px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    max-width: 260px;
+    margin: 70px auto 20px;
+}
+
+.partners-list-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.partners-list-item-name,
+.partners-list-item-description {
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+}
+
+.partners-list-item-name {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.partners-list-item-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    max-width: 220px;
+}
+
+.partners-list-item-img {
+    display: block;
+    margin: 0 auto 22px;
+}
+
+.image-icon {
+    position: relative;
+}
+
+.icon-overlay {
+    position: absolute;
+    display: block;
+    content: "";
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 86px;
+    left: 184px;
+}
+
+.icon-overlay-tv {
+    background-image: url(../img/tv.png);
+}
+
+.icon-overlay-tube {
+    background-image: url(../img/tube.png);
+}
+
+.icon-overlay-cup {
+    background-image: url(../img/cup.png);
+}
+
+.icon-overlay-telegram {
+    background-image: url(../img/telegram.png);
+}
+  
