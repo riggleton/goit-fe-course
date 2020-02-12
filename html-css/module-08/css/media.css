@@ -41,8 +41,8 @@
 
     .banner-heading-1 {
         font-size: 52px;
-        width: 492px;
-        margin: 100px auto 38px;
+        max-width: 510px;
+        margin: 100px auto 35px;
     }
 
     .banner-heading-2 {
@@ -93,10 +93,10 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 960px) {
 
     .container {
-        width: 1200px;
+        width: 960px;
     }
 
     .container-1 {

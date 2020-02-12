@@ -62,7 +62,8 @@ ul {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    margin: 38px auto 20px;
+    margin: 40px auto 20px;
+    max-width: 300px;
 }
 
 .banner-heading-2 {
