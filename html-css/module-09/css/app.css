@@ -1,0 +1,248 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 960px
+);
+
+$container-max-widths: (
+  sm: 320px,
+  md: 748px,
+  lg: 940px
+);
+
+*::before, 
+*::after, 
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-fluid {
+    background-image: url(../img/background-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    max-width: 1440px;
+}
+
+.my-container {
+    margin: auto;
+}
+
+.upper-container {
+    height: 540px;
+    color: #fff;  
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+.header-button {
+    height: 36px;
+    width: 90px;
+    font-weight: 700;
+    font-size: 14px;
+    outline: none;
+    background-color: transparent;
+    border: solid 2px transparent;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.header-button:hover {
+    border-color: #fff;
+}
+
+.main-heading {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px auto 20px;
+    max-width: 320px;
+}
+
+.additional-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 220px;
+}
+
+.button {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 36px;
+    color: #fff;
+    margin: 20px auto 0;
+    max-width: 280px;
+    height: 40px;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.button-pink {
+    background-color: #ff4e50;
+}
+
+.button-transparent {
+    background-color: transparent;
+    color: #ff4e50;
+    margin: 0 auto 40px;
+}
+
+.partners-section {
+    color: #333333;
+}
+
+.partners-heading {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 260px;
+    margin: 60px auto 20px;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+    margin-bottom: 30px;
+}
+
+.partners-list-item-name,
+.partners-list-item-description {
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+}
+
+.partners-list-item-name {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.partners-list-item-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    max-width: 220px;
+}
+
+.partners-list-item-img {
+    display: block;
+    margin: 0 auto 22px;
+}
+
+.image-icon {
+    position: relative;
+}
+
+.icon-overlay {
+    position: absolute;
+    display: block;
+    content: "";
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 84px;
+    left: 172px;
+}
+
+.icon-overlay-tv {
+    background-image: url(../img/tv.png);
+}
+
+.icon-overlay-tube {
+    background-image: url(../img/tube.png);
+}
+
+.icon-overlay-cup {
+    background-image: url(../img/cup.png);
+}
+
+.icon-overlay-telegram {
+    background-image: url(../img/telegram.png);
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 767px) {
+    .my-container {
+        width: 320px;
+    }
+
+    .logo {
+        padding-top: 110px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .upper-container {
+        height: 700px;
+    }
+
+    .header-button {
+        margin-top: 0;
+    }
+
+    .main-heading {
+        font-size: 52px;
+        max-width: 510px;
+        margin: 160px auto 35px;
+    }
+
+    .additional-heading {
+        font-size: 24px;
+        max-width: 420px;
+        margin-bottom: 20px;
+    }
+
+    .partners-heading {
+        max-width: 410px;
+        margin-bottom: 36px;
+    }
+
+    .icon-overlay {
+        left: 134px;
+    }
+
+    .button-transparent {
+        max-width: 192px;
+    }
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .my-container {
+        width: 748px;
+    }
+
+    .item-1,
+    .item-3 {
+        margin-bottom: 40px;
+    }
+
+@media screen and (min-width: 960px) {
+    .my-container {
+        width: 940px;
+    }
+}
