@@ -1,4 +1,4 @@
-$grid-breakpoints: (
+/* $grid-breakpoints: (
   xs: 0,
   sm: 480px,
   md: 768px,
@@ -9,7 +9,7 @@ $container-max-widths: (
   sm: 320px,
   md: 748px,
   lg: 940px
-);
+); */
 
 *::before, 
 *::after, 
@@ -36,6 +36,7 @@ a:hover {
 
 .my-container {
     margin: auto;
+    max-width: 940px;
 }
 
 .upper-container {
@@ -187,9 +188,9 @@ a:hover {
 
 /* MEDIA */
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .my-container {
-        width: 320px;
+        max-width: 320px;
     }
 
     .logo {
@@ -197,7 +198,8 @@ a:hover {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
+
     .upper-container {
         height: 700px;
     }
@@ -231,9 +233,9 @@ a:hover {
         max-width: 192px;
     }
 
-@media screen and (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 768px) and (max-width: 959px) {
     .my-container {
-        width: 748px;
+        max-width: 748px;
     }
 
     .item-1,
@@ -241,8 +243,8 @@ a:hover {
         margin-bottom: 40px;
     }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
     .my-container {
-        width: 940px;
+        max-width: 940px;
     }
 }
