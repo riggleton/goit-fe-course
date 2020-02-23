@@ -1,0 +1,47 @@
+.header {
+    height: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 120px;
+    color: #fff;
+
+    &__logo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    }
+
+    &__menu {
+        min-width: 620px;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 600;
+        position: relative;
+
+        &:hover {
+            color: #fce38a;
+            -webkit-transition: linear 200ms;
+            -o-transition: linear 200ms;
+            transition: linear 200ms;
+
+            &::after {
+                display: block;
+            }
+        }
+
+        &::after {
+            display: none;
+            content: "";
+            position: absolute;
+            background-color: #fce38a;
+            height: 3px;
+            width: 100%;
+            top: 30px;
+            left: -1px;
+        }
+    }
+}

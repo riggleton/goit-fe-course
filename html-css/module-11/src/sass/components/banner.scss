@@ -1,0 +1,31 @@
+.banner {
+    &__heading {
+        color: #fff;
+        max-width: 820px;
+
+        &_cursive {
+            font-size: 72px;
+            line-height: 72px;
+            margin-bottom: 40px;
+        }
+
+        &_bold {
+            font-size: 150px;
+            line-height: 150px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        outline: none;
+        margin: 96px auto 0;
+        background-color: transparent;
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        min-width: 160px;
+    }
+}
+

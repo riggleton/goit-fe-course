@@ -1,0 +1,21 @@
+.container {
+    margin: 0 auto;
+}
+
+.container-1200 {
+    max-width: 1200px;
+}
+
+.container-1920 {
+    background-image: url(../images/picture@1x.jpg);
+    max-width: 1920px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .container-1920 {
+        background-image: url(../img/picture@2x.jpg);
+    }
+}
